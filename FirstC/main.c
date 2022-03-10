@@ -6,20 +6,58 @@
 //
 
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdbool.h>
 
-void SayHello( void );
+#define kMaxLineLength 200
+
+void ReadLine( char *buff );
+int CountWords( char *line );
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
     
-    int i;
+    char line[ kMaxLineLength ];
+    int numWords;
     
-    for ( i = 1; i < 10; i++ )
-        SayHello();
+    ReadLine( line );
+    numWords = CountWords( line );
+    
+    printf("\n---- This line has %d word%s ---\n", numWords, (numWords != 1 ? "s" : ""));
+    
+    printf("%s\n", line);
+    
     return 0;
 }
 
-void SayHello ( void ) {
-    printf("Hello Jinyong.\n");
+void ReadLine(char *buff) {
+    
+    int numCharsread = 0;
+    int c;
+    while ((c = getchar()) != EOF && c != '\n' && ++numCharsread <= kMaxLineLength) {
+        *buff++ = c; //*buff
+    }
+    *buff = '\0';
+}
+
+int CountWords( char *line ) {
+    int numWords, inWord;
+    
+    numWords = 0;
+    inWord =false;
+    
+    while ( *line != 0){
+        
+        if (isspace(*line)) {
+            inWord = false;
+        } else {
+            if (! inWord) {
+                numWords++;
+                inWord = true;
+            }
+        }
+        
+        line++;
+    }
+    return numWords;
 }
