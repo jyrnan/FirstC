@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		4B1FD59727D9546E00989C47 /* FirstC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstC; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1FD59A27D9546E00989C47 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4B6FA18C27D9FEDF0076A69D /* dvdTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dvdTracker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				4B1FD59A27D9546E00989C47 /* main.c */,
+				4B6FA18C27D9FEDF0076A69D /* dvdTracker.h */,
 			);
 			path = FirstC;
 			sourceTree = "<group>";
