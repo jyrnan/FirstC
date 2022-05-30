@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B1FD59B27D9546E00989C47 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FD59A27D9546E00989C47 /* main.c */; };
+		4B8CAD8A27F539E200CF5E80 /* libreadline.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8CAD8927F539E200CF5E80 /* libreadline.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +26,14 @@
 /* Begin PBXFileReference section */
 		4B1FD59727D9546E00989C47 /* FirstC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstC; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1FD59A27D9546E00989C47 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		4B6FA18C27D9FEDF0076A69D /* dvdTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dvdTracker.h; sourceTree = "<group>"; };
+		4B2FF85B280E60EE00D7361A /* queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		4B2FF85C280E60EE00D7361A /* queue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = queue.c; sourceTree = "<group>"; };
+		4B2FF85E280EA3B600D7361A /* binaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = binaryTree.h; sourceTree = SOURCE_ROOT; };
+		4B2FF85F280EA3B600D7361A /* binaryTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = binaryTree.c; sourceTree = SOURCE_ROOT; };
+		4B6FA18D27DADD3D0076A69D /* DinaEdit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DinaEdit.h; sourceTree = "<group>"; };
+		4B85826F282A011000D58A92 /* mstore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mstore.h; sourceTree = "<group>"; };
+		4B858270282A011000D58A92 /* mstore.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mstore.c; sourceTree = "<group>"; };
+		4B8CAD8927F539E200CF5E80 /* libreadline.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libreadline.tbd; path = usr/lib/libreadline.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8CAD8A27F539E200CF5E80 /* libreadline.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +51,13 @@
 		4B1FD58E27D9546E00989C47 = {
 			isa = PBXGroup;
 			children = (
+				4B85826F282A011000D58A92 /* mstore.h */,
+				4B858270282A011000D58A92 /* mstore.c */,
+				4B2FF85B280E60EE00D7361A /* queue.h */,
+				4B2FF85C280E60EE00D7361A /* queue.c */,
 				4B1FD59927D9546E00989C47 /* FirstC */,
 				4B1FD59827D9546E00989C47 /* Products */,
+				4B8CAD8827F539E200CF5E80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +72,20 @@
 		4B1FD59927D9546E00989C47 /* FirstC */ = {
 			isa = PBXGroup;
 			children = (
+				4B2FF85E280EA3B600D7361A /* binaryTree.h */,
+				4B2FF85F280EA3B600D7361A /* binaryTree.c */,
 				4B1FD59A27D9546E00989C47 /* main.c */,
-				4B6FA18C27D9FEDF0076A69D /* dvdTracker.h */,
+				4B6FA18D27DADD3D0076A69D /* DinaEdit.h */,
 			);
 			path = FirstC;
+			sourceTree = "<group>";
+		};
+		4B8CAD8827F539E200CF5E80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B8CAD8927F539E200CF5E80 /* libreadline.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +115,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					4B1FD59627D9546E00989C47 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -242,6 +266,7 @@
 		4B1FD59F27D9546E00989C47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FAL6NRZRQP;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -252,6 +277,7 @@
 		4B1FD5A027D9546E00989C47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FAL6NRZRQP;
 				ENABLE_HARDENED_RUNTIME = YES;
