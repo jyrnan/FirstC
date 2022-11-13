@@ -17,14 +17,11 @@
 #define LEN 81
 
 void ToUpper(char *);
+int more02(int ac, const char* av[]);
 
 int main(int argc, const char * argv[]) {
     
-    short int v = -12345;
-    unsigned  short uv = (unsigned short) v;
-    printf("v = %d, uv = %u\n", v, uv);
-    
-    return 0;
+    return  more02(argc, argv);
 }
 
 //test for Git push
