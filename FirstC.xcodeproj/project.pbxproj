@@ -10,6 +10,7 @@
 		4B1FD59B27D9546E00989C47 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FD59A27D9546E00989C47 /* main.c */; };
 		4B8CAD8A27F539E200CF5E80 /* libreadline.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8CAD8927F539E200CF5E80 /* libreadline.tbd */; };
 		D25365B32920F29D00563C21 /* more02.c in Sources */ = {isa = PBXBuildFile; fileRef = D25365B22920F29D00563C21 /* more02.c */; };
+		D27EDD6F2929FEC400AE48DF /* CSAPPScoket.c in Sources */ = {isa = PBXBuildFile; fileRef = D27EDD6E2929FEC400AE48DF /* CSAPPScoket.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		4B858270282A011000D58A92 /* mstore.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mstore.c; sourceTree = "<group>"; };
 		4B8CAD8927F539E200CF5E80 /* libreadline.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libreadline.tbd; path = usr/lib/libreadline.tbd; sourceTree = SDKROOT; };
 		D25365B22920F29D00563C21 /* more02.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = more02.c; sourceTree = "<group>"; };
+		D27EDD6D2929FEC400AE48DF /* CSAPPScoket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAPPScoket.h; sourceTree = "<group>"; };
+		D27EDD6E2929FEC400AE48DF /* CSAPPScoket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CSAPPScoket.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,8 @@
 		4B1FD58E27D9546E00989C47 = {
 			isa = PBXGroup;
 			children = (
+				D27EDD6D2929FEC400AE48DF /* CSAPPScoket.h */,
+				D27EDD6E2929FEC400AE48DF /* CSAPPScoket.c */,
 				4B85826F282A011000D58A92 /* mstore.h */,
 				4B858270282A011000D58A92 /* mstore.c */,
 				4B2FF85B280E60EE00D7361A /* queue.h */,
@@ -148,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27EDD6F2929FEC400AE48DF /* CSAPPScoket.c in Sources */,
 				D25365B32920F29D00563C21 /* more02.c in Sources */,
 				4B1FD59B27D9546E00989C47 /* main.c in Sources */,
 			);
