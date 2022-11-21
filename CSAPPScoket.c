@@ -6,9 +6,7 @@
 //
 
 #include "CSAPPScoket.h"
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netdb.h>
+
 
 
 
@@ -102,3 +100,33 @@ int open_clientfd(char *hostname, char *port) {
         return clientfd;
 }
 
+
+
+int demoCGI(void) {
+    char *buff, *p;
+    char arg1[1024], arg2[1024], content[1024];
+    int n1=0, n2=0;
+    
+    if ((buff = getenv("QUERY_STRING")) != NULL) {
+        p = strchr(buff, '&');
+        *p = '\0';
+        strcpy(arg1, buff);
+        strcpy(arg2, p+1);
+        n1 = atoi(arg1);
+        n2 = atoi(arg2);
+    }
+    
+    sprintf(content, "QUERY_STRING=%s", buff);
+    sprintf(content, "Welcome to add.com: ");
+    sprintf(content, "%sThe Internet addition portal. \r\n<p>", content);
+    sprintf(content, "%sThe answer : %d + %d = %d\r\n<p>", content, n1, n2, n1 + n2);
+    sprintf(content, "%sThanks for visiting!\r\n", content);
+    
+    printf("Connection: closed\r\n");
+    printf("Content_length: %d\r\n", (int)strlen(content));
+    printf("Content_type: text/html\r\n\r\n");
+    printf("%s", content);
+    fflush(stdout);
+    
+    return 0;
+}
