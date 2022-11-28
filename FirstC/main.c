@@ -20,10 +20,11 @@
 
 void ToUpper(char *);
 int more02(int ac, const char* av[]);
+void showtime(long timeval);
 
 int main(int argc, const char * argv[]) {
-    
-    return  demodirop(argc, argv);
+    showtime(200000000);
+    return  0;
 }
 
 //test for Git push

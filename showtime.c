@@ -9,9 +9,13 @@
 #include <utmp.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <time.h>
 
 #define SHOWHOST
 
-int who1(void) {
-    struct utmp current_record;
+void showtime(long timeval) {
+    char *cp;
+    cp = ctime(&timeval);
+    
+    printf("%s\n", cp);
 }
