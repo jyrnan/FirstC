@@ -13,6 +13,7 @@
 #include <time.h>
 #include <stdint.h>
 #include "CSAPPScoket.h"
+#include "CSAPPRio_t.h"
 
 #define MAXTITL 41
 #define LEN 81
@@ -22,8 +23,7 @@ int more02(int ac, const char* av[]);
 
 int main(int argc, const char * argv[]) {
     
-    
-    return  hostinfo(argc, argv);
+    return  demodirop(argc, argv);
 }
 
 //test for Git push

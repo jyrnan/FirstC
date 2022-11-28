@@ -130,3 +130,14 @@ int demoCGI(void) {
     
     return 0;
 }
+
+int sysIO(void) {
+    
+    int fd, result;
+    char *text = "Hello world";
+    fd = open("hello.txt", O_RDWR, 0);
+    result = write(fd, text, strlen(text));
+    printf("result: %d\n", result);
+    close(fd);
+    return result;
+}
