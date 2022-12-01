@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B1FD59B27D9546E00989C47 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FD59A27D9546E00989C47 /* main.c */; };
 		4B8CAD8A27F539E200CF5E80 /* libreadline.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8CAD8927F539E200CF5E80 /* libreadline.tbd */; };
-		D25365B32920F29D00563C21 /* more02.c in Sources */ = {isa = PBXBuildFile; fileRef = D25365B22920F29D00563C21 /* more02.c */; };
-		D27EDD6F2929FEC400AE48DF /* CSAPPScoket.c in Sources */ = {isa = PBXBuildFile; fileRef = D27EDD6E2929FEC400AE48DF /* CSAPPScoket.c */; };
-		D27EDD72292DD1EA00AE48DF /* CSAPPRio_t.c in Sources */ = {isa = PBXBuildFile; fileRef = D27EDD71292DD1EA00AE48DF /* CSAPPRio_t.c */; };
-		D27EDD7429349A3E00AE48DF /* showtime.c in Sources */ = {isa = PBXBuildFile; fileRef = D27EDD7329349A3E00AE48DF /* showtime.c */; };
+		D27EDD782937078A00AE48DF /* demoPerror.c in Sources */ = {isa = PBXBuildFile; fileRef = D27EDD772937078A00AE48DF /* demoPerror.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +40,8 @@
 		D27EDD70292DD1EA00AE48DF /* CSAPPRio_t.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAPPRio_t.h; sourceTree = "<group>"; };
 		D27EDD71292DD1EA00AE48DF /* CSAPPRio_t.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CSAPPRio_t.c; sourceTree = "<group>"; };
 		D27EDD7329349A3E00AE48DF /* showtime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = showtime.c; sourceTree = "<group>"; };
+		D27EDD752934BBB800AE48DF /* cp1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cp1.c; sourceTree = "<group>"; };
+		D27EDD772937078A00AE48DF /* demoPerror.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = demoPerror.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +59,13 @@
 		4B1FD58E27D9546E00989C47 = {
 			isa = PBXGroup;
 			children = (
+				D27EDD752934BBB800AE48DF /* cp1.c */,
 				D27EDD6D2929FEC400AE48DF /* CSAPPScoket.h */,
 				D27EDD6E2929FEC400AE48DF /* CSAPPScoket.c */,
 				D27EDD70292DD1EA00AE48DF /* CSAPPRio_t.h */,
 				D27EDD71292DD1EA00AE48DF /* CSAPPRio_t.c */,
 				D27EDD7329349A3E00AE48DF /* showtime.c */,
+				D27EDD772937078A00AE48DF /* demoPerror.c */,
 				4B85826F282A011000D58A92 /* mstore.h */,
 				4B858270282A011000D58A92 /* mstore.c */,
 				4B2FF85B280E60EE00D7361A /* queue.h */,
@@ -161,11 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D27EDD7429349A3E00AE48DF /* showtime.c in Sources */,
-				D27EDD6F2929FEC400AE48DF /* CSAPPScoket.c in Sources */,
-				D27EDD72292DD1EA00AE48DF /* CSAPPRio_t.c in Sources */,
-				D25365B32920F29D00563C21 /* more02.c in Sources */,
-				4B1FD59B27D9546E00989C47 /* main.c in Sources */,
+				D27EDD782937078A00AE48DF /* demoPerror.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
