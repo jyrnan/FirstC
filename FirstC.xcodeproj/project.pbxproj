@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B8CAD8A27F539E200CF5E80 /* libreadline.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8CAD8927F539E200CF5E80 /* libreadline.tbd */; };
-		D27EDD782937078A00AE48DF /* demoPerror.c in Sources */ = {isa = PBXBuildFile; fileRef = D27EDD772937078A00AE48DF /* demoPerror.c */; };
+		D27EDD7A293851CB00AE48DF /* ls1.c in Sources */ = {isa = PBXBuildFile; fileRef = D27EDD79293851CB00AE48DF /* ls1.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +42,7 @@
 		D27EDD7329349A3E00AE48DF /* showtime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = showtime.c; sourceTree = "<group>"; };
 		D27EDD752934BBB800AE48DF /* cp1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cp1.c; sourceTree = "<group>"; };
 		D27EDD772937078A00AE48DF /* demoPerror.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = demoPerror.c; sourceTree = "<group>"; };
+		D27EDD79293851CB00AE48DF /* ls1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ls1.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				D27EDD71292DD1EA00AE48DF /* CSAPPRio_t.c */,
 				D27EDD7329349A3E00AE48DF /* showtime.c */,
 				D27EDD772937078A00AE48DF /* demoPerror.c */,
+				D27EDD79293851CB00AE48DF /* ls1.c */,
 				4B85826F282A011000D58A92 /* mstore.h */,
 				4B858270282A011000D58A92 /* mstore.c */,
 				4B2FF85B280E60EE00D7361A /* queue.h */,
@@ -161,7 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D27EDD782937078A00AE48DF /* demoPerror.c in Sources */,
+				D27EDD7A293851CB00AE48DF /* ls1.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
